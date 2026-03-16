@@ -23,6 +23,7 @@ CREATE TABLE Produit(
         ON UPDATE CASCADE
 );
 
+
 CREATE TABLE Magasin(
     id_magasin INT PRIMARY KEY,
     nom_magasin VARCHAR(100),
