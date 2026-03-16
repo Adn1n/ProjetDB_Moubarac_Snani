@@ -60,6 +60,7 @@ CREATE TABLE Commande(
         ON UPDATE CASCADE
 );
 
+
 CREATE TABLE Ligne_commande(
     id_commande INT,
     id_produit INT,
