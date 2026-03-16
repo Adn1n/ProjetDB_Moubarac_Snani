@@ -227,3 +227,16 @@ APPLIQUER(
 #id_produit,
 #id_promotion
 )
+
+## Scénario d’utilisation
+
+La base de données est utilisée par le service commercial d’une entreprise de vente de produits multimédias (comme la FNAC). 
+
+Les employés utilisent la base pour :
+- consulter les produits disponibles
+- analyser les ventes
+- identifier les clients importants
+- vérifier les stocks dans les magasins
+- analyser les promotions et les fournisseurs
+
+Les requêtes SQL permettent d’extraire ces informations pour faciliter la gestion commerciale et les décisions marketing.
