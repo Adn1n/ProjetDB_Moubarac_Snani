@@ -1,0 +1,21 @@
+Donne les requêtes d’insertion permettant de remplir la base de données dont le modèle relationnel est le suivant : 
+
+CATEGORIE(id_categorie, nom_categorie)
+FOURNISSEUR(id_fournisseur, siret, nom_fournisseur)
+MAGASIN(id_magasin, nom_magasin, adresse_magasin, ville_magasin, code_postal)
+CLIENT(id_client, nom, prenom, email, telephone)
+PRODUIT(id_produit, reference_produit, nom_produit, description_produit, prix_de_vente, taux_TVA, duree_garantie, id_categorie)
+EMPLOYE(id_employe, nom_employe, id_magasin)
+COMMANDE(id_commande, date_commande, statut_commande, montant_total, id_client)
+LIGNE_COMMANDE(#id_commande, #id_produit, quantite_commandee)
+STOCKER(#id_produit, #id_magasin, quantite_stock)
+FOURNIR(#id_produit, #id_fournisseur)
+VENDRE(#id_produit, #id_magasin, #id_fournisseur)
+PROMOTION(id_promotion, pourcentage_reduction)
+APPLIQUER(#id_produit, #id_promotion)
+
+Les clés primaires correspondent aux id, sauf si autre chose est précisé (quand c'est un attribut composé) les clés étrangères sont identifiées par les #, et ont le même nom que les clés primaires auxquelles elles font référence.
+Je veux 10 lignes pour chaques entités, mon projet est comme la fnac qui vend des objets électronique,livres, jeux vidéos.
+Les clés étrangères doivent faire référence aux clés primaires existantes : donne les lignes en commençant par remplir les tables dans lesquelles il n'y a pas de clés étrangères, puis les tables dans lesquelles les clés étrangères font références à des clés primaires des tables déjà remplies. 
+
+Fournis l'ensemble sous la forme d’un script SQL prêt à être exécuté.
