@@ -25,3 +25,7 @@ UNIQUE (email);
 ALTER TABLE Fournisseur
 ADD CONSTRAINT siret_unique
 UNIQUE (siret);
+
+ALTER TABLE Commande
+ADD CONSTRAINT statut_valide
+CHECK (statut_commande IN ('en cours','validee','annulee'));
