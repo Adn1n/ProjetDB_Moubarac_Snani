@@ -1,4 +1,4 @@
-CREATE DATABASE projetdb;
+CREATE DATABASE IF NOT EXISTS projetdb;
 USE projetdb;
 
 CREATE TABLE Categorie(
