@@ -1,4 +1,5 @@
 # ProjetDB_Moubarac_Snani
+
 Ce projet consiste à concevoir une base de données en appliquant la méthode MERISE. À partir d’un domaine choisi, les étudiants analysent les besoins, créent un MCD, puis développent et interrogent la base via SQL, en utilisant un dépôt GitHub.
 
 ## Conception d’une base de données pour une entreprise de vente multimédia
@@ -137,5 +138,92 @@ Le modèle devra représenter :
 - les identifiants
 - les cardinalités
 
+# 6. Modèle Logique de Données (MLD)
+
 Une image du MCD sera ajoutée ci-dessous :
 <img width="1305" height="589" alt="555294420-d013722f-2ea1-4621-bc75-09385705d2f6-2" src="https://github.com/user-attachments/assets/2b3745c9-e8c5-4226-967e-f618100eb5ba" />
+
+À partir du MCD, nous avons appliqué les règles de transformation MERISE afin d’obtenir le modèle relationnel suivant.
+
+PRODUIT(
+id_produit,
+reference_produit,
+nom_produit,
+description_produit,
+prix_vente,
+taux_TVA,
+duree_garantie,
+#id_categorie
+)
+
+CATEGORIE(
+id_categorie,
+nom_categorie
+)
+
+FOURNISSEUR(
+id_fournisseur,
+siret,
+nom_fournisseur
+)
+
+FOURNIR(
+#id_fournisseur,
+#id_produit
+)
+
+MAGASIN(
+id_magasin,
+nom_magasin,
+adresse_magasin,
+ville_magasin,
+code_postal
+)
+
+STOCKER(
+#id_magasin,
+#id_produit,
+quantite_stock
+)
+
+CLIENT(
+id_client,
+nom,
+prenom,
+email,
+telephone
+)
+
+COMMANDE(
+id_commande,
+date_commande,
+statut_commande,
+montant_total,
+#id_client
+)
+
+LIGNE_COMMANDE(
+#id_commande,
+#id_produit,
+quantite_commandee
+)
+
+EMPLOYE(
+id_employe,
+nom_employe
+)
+
+TRAVAILLER(
+#id_employe,
+#id_magasin
+)
+
+PROMOTION(
+id_promotion,
+pourcentage_reduction
+)
+
+APPLIQUER(
+#id_produit,
+#id_promotion
+)
