@@ -141,7 +141,8 @@ Le modèle devra représenter :
 # 6. Modèle Logique de Données (MLD)
 
 Une image du MCD sera ajoutée ci-dessous :
-<img width="1305" height="589" alt="555294420-d013722f-2ea1-4621-bc75-09385705d2f6-2" src="https://github.com/user-attachments/assets/2b3745c9-e8c5-4226-967e-f618100eb5ba" />
+<img width="1242" height="550" alt="image" src="https://github.com/user-attachments/assets/6296a2ce-6865-43dd-8085-a3afe23ff774" />
+
 
 À partir du MCD, nous avons appliqué les règles de transformation MERISE afin d’obtenir le modèle relationnel suivant.
 
