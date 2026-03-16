@@ -136,13 +136,12 @@ Le modèle devra représenter :
 - les associations
 - les attributs
 - les identifiants
-- les cardinalités
-
-# 6. Modèle Logique de Données (MLD)
+- les cardinalités7
 
 Une image du MCD sera ajoutée ci-dessous :
 <img width="1242" height="550" alt="image" src="https://github.com/user-attachments/assets/6296a2ce-6865-43dd-8085-a3afe23ff774" />
 
+# 6. Modèle Logique de Données (MLD)
 
 À partir du MCD, nous avons appliqué les règles de transformation MERISE afin d’obtenir le modèle relationnel suivant.
 
