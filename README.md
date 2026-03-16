@@ -3,7 +3,7 @@ Ce projet consiste à concevoir une base de données en appliquant la méthode M
 
 ## Conception d’une base de données pour une entreprise de vente multimédia
 
-## 1. Analyse des besoins
+## 1. Analyse des besoins 
 
 ### Domaine choisi
 Le projet consiste à concevoir une base de données pour une entreprise spécialisée dans la vente de produits multimédias et d’appareils électroniques.  
