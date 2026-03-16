@@ -1,3 +1,6 @@
+CREATE DATABASE projetdb;
+USE projetdb;
+
 CREATE TABLE Categorie(
     id_categorie INT PRIMARY KEY,
     nom_categorie VARCHAR(100)
